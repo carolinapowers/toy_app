@@ -13,7 +13,9 @@
 <p>
   <strong>Microposts:</strong>
   <% @user.microposts.each do |micropost| %>
-    <p><%= micropost.content %></p>
+    <%= link_to micropost do %>
+      <p><%= micropost.content %></p>
+    <% end %>
   <% end %>
 </p
 
